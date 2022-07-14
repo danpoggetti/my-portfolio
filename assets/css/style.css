@@ -1,27 +1,95 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    /* more on this crazy alphanumerical value in a minute! */
-    color: #39a6b2;
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  
-  /* apply styles to <header> */
-  header {
-    padding: 20px 35px;
-    background-color: #39a6b2;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Hero Style Start */
+
+body {
+  background-color: white;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: grey;
+}
+
+header h1 a {
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+  background-color: teal;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-right: 50px;
+}
+
+header nav ul li a {
+  padding: 5px 10px;
+  margin: 5px;
+  line-height: 3;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
 .hero {
-  background-image: url('../images/hero-bg.jpg');
-  height: 600px;
+  height: 400px;
+  width: 100%;
+  padding-top: 1px;
+  margin-bottom: 20px;
+  background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
 }
-/* Hero Style End */
+
+.hero h2 {
+  position: relative;
+  float: right;
+  padding: 5px;
+  background-color: #098577;
+  margin-right: 80px;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* about me section */
+.bio {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+}
+
+.bio h2 {
+  color: black;
+  text-align: center;
+  color: #445876;
+}
+
+.bio p {
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  border-left: 3px solid #445876;
+}
+
+/* projects section */
