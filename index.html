@@ -12,118 +12,89 @@
 <body>
     <!-- navigation -->
     <header class="header">
-        <h1>
-            <a href="index.html">
-                Dan Poggetti
-            </a>
-        </h1>
+        <h1>Dan Poggetti</h1>
         <nav>
-            <!-- unordered list elements-->
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-            </ul>
+            <a href="#about-me">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact-me">Contact Me</a>
+            <a href="#resume">Resume</a>
         </nav>
     </header>
     
-  <!-- hero/jumbotron -->
-  <section class="hero">
-    <h2>Marketing + Coding = My Happy Place!</h2>
+  <!-- hero section -->
+    <section class="hero">
+        <div>
+           <h2>Marketing + Coding = My Happy Place!</h2>
+        </div>
+
+        <figure class= "profile-photo">
+            <img id="border-photo" src="./assets/images/danpoggetti.jpg" alt="this lovely headshot of dan poggetti gives you an idea to what he looks like as you explore his portfolio">
+        </figure>
+
     </section>
+
 
     <main>
         <!-- about me section -->
-        <section id="about-me" class="bio">
-                <h2>
-                    About Me
-                </h2>
-            <p>
-                Hello, my name is Dan Poggetti and I welcome you to my professional portfolio webpage. I'm currently a marketing and coding professional living in beautiful Sacramento, California. Here you'll get a better understanding in my skills, my background and what I enjoy to do while not practing my trade.
-            </p>
-            <p>
-                Like I previously mentioned, I live in Sacramento with my family. When I'm not working I enjoy hiking, watching sports and spending time with my family. I have made it my mission in life to find the perfect cheeseburger. 
-            </p>
-        </section>
-
-        <!-- work section -->
-        <section id="work" class="bio">
-            <h2>
-                Work
-            </h2>
-            <div class="projects">
-                <div class="project project1">
-                    
-                    <a href="https://danpoggetti.github.io/run-buddy/"><h4>Run Buddy</h4></a>
+            <section class="page-sidel" id="about-me">
+                <h2>About Me</h2>
+                <div>
                     <p>
-                        HTML/CSS
-                    </p>
+                     Hello, my name is Dan Poggetti and I welcome you to my portfolio. I'm a marketing professional living in Sacramento, California. I'm currently learning about coding.<br><br>
+                     When I'm not working I enjoy watching sports, reading, and spending time with my family.
+                     </p>
+                 </div>
+            </section>
 
-                </div>
-            
-                <div clas="project project2">
-                    <a href="https://danpoggetti.github.io/Horiseon/"><h4>Horiseon</h4></a>
-                    <p>
-                        HTML/CSS
-                    </p>
-                </div>
+        <section class="page-sidel" id="work">
+            <h2>Work</h2>
+            <div class="flex-parent">
+                
+                <a href="https://danpoggetti.github.io/run-buddy/" target="_blank" class="flex-pics Project1">
+                    <div>
+                        <h3>RUN BUDDY<br>HTML/CSS</h3>
+                    </div>
+                </a>
 
-                <div clas="project project3">
-                    <a href="#"><h4>Future Project</h4></a>
-            
-                </div>
+                <a href="https://danpoggetti.github.io/Horiseon/" target="_blank" class="flex-pics Project2">
+                    <div>
+                        <h3>Horiseon<br>HTML/CSS</h3>
+                    </div>
+                </a>
 
-                <div clas="project project4">
-                    <a href="#"><h4>Future Project</h4></a>
-        
-                </div>
+                <a href="#" class="flex-pics Project3">
+                    <div>
+                        <h3>Coming Soon!</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="flex-pics Project4">
+                    <div>
+                        <h3>Coming Soon!</h3>
+                    </div>
+                </a> 
+
+                <a href="#" class="flex-pics Project5">
+                    <div>
+                        <h3>Coming Soon!</h3>
+                    </div>
+                </a>
                 
             </div>
-
         </section>
-
-        <!-- contact me section -->
-        <section id="contact me" class="bio">
+        <!-- Contact information -->
+        <section class="page-sidel" id="contact-me">
             <h2>Contact Me</h2>
-            <nav>
-                <!-- unordered list elements-->
-                <ul>
-                    <li>
-                        <a href="#">Phone</a>
-                    </li>
-                    <li>
-                        <a href="mailto: danpoggetti@gmail.com">Email</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/danpoggetti">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/danpoggetti">Twitter</a>
-                    </li>
-                </ul>
-            </nav>
-
+            <div>
+                <address>
+                    <a href="#">Phone</a>
+                    <a href="mailto:danpoggetti@gmail.com">Email</a>
+                    <a href="https://github.com/danpoggetti" target="_blank">GitHub</a>
+                    <a href="https://www.twitter.com/danpoggetti" target="_blank">Twitter</a>
+                    <a href="https://www.linkedin.com/in/dan-poggetti-b48a83188/" target="_blank">LinkedIn</a>
+                </address>
+            </div>
         </section>
-
-
     </main>
-
 </body>
-
-<!-- begin footer section -->
-<footer class="footer">
-    <h4>Created by Dan Poggetti &copy; <em id="date"></em> 2022 </h4>
-
-</footer>
-
-
 </html>

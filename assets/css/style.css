@@ -1,95 +1,46 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Universal Selectors */
+*{box-sizing: border-box;}
+
+/* Page Colors */
+:root {
+--light: #f5f0e1; 
+--dark: #1e3d59;
+--backlight: #f5f0e1;
+--bgwords: #1e3d59;
+--bglight: #91cbcd;
+--bright: #ff6340;
 }
 
 
 body {
-  background-color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #1e3d59;
+  background-color: #f5f0e1;
+  line-height: 2;
 }
 
 header {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: grey;
+  background-color: var(--dark);
+  padding: 15px 20px 15px 0;
 }
 
-header h1 a {
-  font-size: 40px;
-  color: black;
-  text-decoration: none;
-  background-color: teal;
-}
+header h1 {
+  color: var(--bright);
+  background-color: #f5f0e1;
+  padding: 1px 3% 5px 3%;
+  margin: 0;
+  font-size: 4vw;
+  line-height: 1;
+}   
 
-header nav ul {
+header nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  margin-right: 50px;
+  flex-direction: row;
+  flex-wrap: wrap;     
 }
 
-header nav ul li a {
-  padding: 5px 10px;
-  margin: 5px;
-  line-height: 3;
-  font-weight: bold;
-  font-size: 22px;
-  text-decoration: underline;
-}
-
-.hero {
-  height: 400px;
-  width: 100%;
-  padding-top: 1px;
-  margin-bottom: 20px;
-  background-image: url("../images/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.hero h2 {
-  position: relative;
-  float: right;
-  padding: 5px;
-  background-color: #098577;
-  margin-right: 80px;
-}
-
-main {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* about me section */
-.bio {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 25px;
-}
-
-.bio h2 {
-  color: black;
-  text-align: center;
-  color: #445876;
-}
-
-.bio p {
-  color: black;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  border-left: 3px solid #445876;
-}
-
-/* projects section */
