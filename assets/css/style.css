@@ -207,3 +207,28 @@ header nav a {
   background-color: var(--bglight);
   padding: 15px 10px;
 }
+
+.flex-pics:hover {
+  background-color: rgba(30,48,64,0.2);
+}
+
+/* work section pictures */
+.Project1 {
+  background-image: url("../images/run-buddy-bg.jpg");
+}
+
+.Project2 {
+  background-image: url("../images/horiseon.jpg");
+}
+
+.Project3 {
+  background-image: url("../images/coming-soon.jpg");
+}
+
+.Project4 {
+  background-image: url("../images/coming-soon.jpg");
+}
+
+.Project5 {
+  background-image: url("../images/coming-soon.jpg");
+}
