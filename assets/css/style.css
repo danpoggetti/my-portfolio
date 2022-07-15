@@ -89,3 +89,25 @@ header nav a {
 #border-photo {
   border-radius: 50%;
 }
+
+/* parent class selectors */
+.page-sidel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  margin:15px, 5px;
+  padding: 20px 5px;
+}
+
+/* all h2 headers with class page sidel */
+.page-sidel > h2 {
+  flex: 0 0 15%;
+  text-align: right;
+  padding-right: 20px;
+  border-right: 5px solid var(--dark);
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.5;
+}
