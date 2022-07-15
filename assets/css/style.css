@@ -111,3 +111,99 @@ header nav a {
   font-weight: bold;
   line-height: 1.5;
 }
+
+/* applies to all div with class page sidel */
+.page-sidel > div {
+  flex: 0 0 80%;
+}
+
+.page-sidel p {
+  margin: 30px 40px;
+  padding: 20px 20px;
+  font-size:20px;
+  color: var(--dark);
+}
+
+/* flex properties for work pictures */
+
+.flex-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-pics {
+  display:flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  min-height: 250px;
+  max-height: 350px;
+  flex-basis: calc(50% - 40px);
+  margin: 20px;
+  padding: 5px 5px 20px 5px;
+  border: 6px solid var(--bglight);
+  color: var(--bgwords);
+  transition: all 0.5s;
+  background-blend-mode: soft-light;
+  background-color: var(--bgwords)  
+}
+
+.flex-pics:first-child {
+  min-height:400px;
+  flex-basis: 100%;
+}
+
+.flex-pics div {
+  background-color: var(--bglight);
+  padding: 15px 10px;
+}
+
+/* applies to all div with class page sidel */
+.page-sidel > div {
+  flex: 0 0 80%;
+}
+
+.page-sidel p {
+  margin: 30px 40px;
+  padding: 20px 20px;
+  font-size:20px;
+  color: var(--dark);
+}
+
+/* flex properties for work pictures */
+
+.flex-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-pics {
+  display:flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  min-height: 250px;
+  max-height: 350px;
+  flex-basis: calc(50% - 40px);
+  margin: 20px;
+  padding: 5px 5px 20px 5px;
+  border: 6px solid var(--bglight);
+  color: var(--bgwords);
+  transition: all 0.5s;
+  background-blend-mode: soft-light;
+  background-color: var(--bgwords)  
+}
+
+.flex-pics:first-child {
+  min-height:400px;
+  flex-basis: 100%;
+}
+
+.flex-pics div {
+  background-color: var(--bglight);
+  padding: 15px 10px;
+}
