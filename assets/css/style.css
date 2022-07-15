@@ -44,3 +44,48 @@ header nav {
   flex-wrap: wrap;     
 }
 
+header nav a {
+  text-decoration: underline;
+  padding: 5px 10px;
+  color: var(--bright);
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-size: 100% .20em;
+  background-position: bottom;
+  font-size: 2vw;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  text-align: center;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 20vw;
+}
+
+.hero h2 {
+  display: inline;
+  font-size: 30px;
+  background-color: var(--light);
+  color: var(--bright);
+  padding: 1px 5px;
+  line-height: 2;
+  padding: 2;
+}
+
+.profile-photo {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+#border-photo {
+  border-radius: 50%;
+}
