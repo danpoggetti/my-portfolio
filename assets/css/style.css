@@ -209,7 +209,7 @@ header nav a {
 }
 
 .flex-pics:hover {
-  background-color: rgba(30,48,64,0.2);
+  background-color: var(--bglight);
 }
 
 /* work section pictures */
@@ -231,4 +231,74 @@ header nav a {
 
 .Project5 {
   background-image: url("../images/coming-soon.jpg");
+}
+
+/* Contact Section */
+.page-sidel address {
+  display:flex;
+  flex: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+.page-sidel address a {
+  background-position: bottom;
+  text-decoration:none;
+  background-repeat: no-repeat;
+  padding: 5px 20px;  
+  color:var(--dark);
+  margin-right: 30px;
+  background-image: linear-gradient(0deg, var(--dark) 0%, var(--dark) 100%);
+  background-size: 100% .20em;
+  transition:all .3s ease-in;
+  font-size: 25px;
+}
+
+/* to do add all media query information */
+
+@media screen and (max-width: 568px) {
+  header {
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 10px 0;
+  }
+
+  header h1 {
+    width: 100%;
+    padding:10px;
+    margin-bottom: 20px;
+    font-size: 10vw;
+  }
+  
+  header nav {
+    justify-content: center;
+  }
+  
+  .page-sidel > h2, 
+  .page-side1 > div {
+    flex: 0 0 100%;
+  }
+  
+  .page-side1 > h2 {
+    border-right: none;
+    text-align: left;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    font-size: 7vw; 
+  }
+  
+  .page-sidel {
+    width: 100%;
+  }
+  
+  .flex-parent {
+    display: flex;
+    width: 100%;
+  }
+  
+  .Project1 {
+    width: 100%;
+    height: 100vh;
+  }  
 }
